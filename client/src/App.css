@@ -1,0 +1,364 @@
+/* FONTS */
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: local('Roboto-Light'), url(./assets/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local('Roboto-Medium'), url(./assets/Roboto-Medium.ttf) format('truetype');
+}
+
+/* ALL PAGES */
+
+.page {
+  height: 100vw;
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
+  background-attachment: fixed;
+  background-color: black;
+  background-origin: border-box;
+  background-clip: border-box;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ALL BUTTONS */
+
+.btn {
+  border-radius: 15px;
+  font-family: 'Roboto-Medium';
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* ALL TEXT */
+
+.txt {
+  font-family: 'Roboto-Medium';
+  color: #f2f2f2; 
+}
+
+/* LANDING PAGE */
+
+#landing-page {
+  background-image: url(./assets/Pokemon_Langing_Page.jpg);
+  position: fixed;
+}
+
+#ver-pokemones-btn {
+  background-color: #05D56D;
+  border-color: transparent;
+  position: absolute;
+  top: 35%;
+  left: 13%;
+}
+
+#ver-pokemones-btn:hover {
+  box-shadow: 7px 7px #139c5a93;
+}
+
+#ver-pokemones-txt {
+  font-size: 1.5em;
+  text-decoration: inherit;
+  color: #141414;
+}
+
+/* HOME PAGE */
+
+#home-page {
+  background-color: #141414;
+  text-align: center;
+  height: 2000px;
+}
+
+/* NAVBAR */
+.searchbar {
+  background-color: #f2cb07;
+  padding: 20px;
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.searchbar-txt {
+  font-family: 'Roboto-Medium';
+  color: #212121;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+.searchbar-btn {
+  color: #212121;
+  font-size: 1.2em;
+  font-family: 'Roboto-Medium';
+  background-color: transparent;
+  border-radius: 15px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+#search-input {
+  font-family: 'Roboto-Medium';
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #212121;
+  color: #212121;
+  font-size: 1.2em;
+  font-family: 'Roboto-Light';
+}
+
+.search-dropdown {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #212121;
+  font-size: 1.2em;
+  font-family: 'Roboto-Light';
+}
+
+#agregar-pokemon-btn {
+  background-color: #05D56D;
+  border-color: transparent;
+  margin-top: 40px;
+}
+
+#agregar-pokemon-txt {
+  color: #141414;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+#agregar-pokemon-btn:hover {
+  box-shadow: 5px 5px #139c5a93;
+}
+
+/* CARDS */
+.not-found-txt {
+  color: #f2f2f2;
+  font-family: 'Roboto-Light';
+  margin-top: 100px;
+}
+
+#cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: space-between;
+  row-gap: 40px;
+  column-gap: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 50px;
+}
+
+#card {
+  padding: 15px;
+  width: 350px;
+  height: 500px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  background-color: #f2f2f22c;
+}
+
+#card-img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.card-txt {
+  font-family: 'Roboto-Medium';
+  color: #f2f2f2;
+  text-decoration: none;
+  border: none;
+}
+
+#eliminar-btn {
+  border: none;
+  background: none;
+  color: #f2f2f2;
+  text-decoration: underline;
+  margin: 0px;
+}
+
+#eliminar-btn:hover {
+  cursor: pointer;
+}
+
+/* PAGINATION */
+.pagination {
+  background-color: transparent;
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.2em;
+  font-family: 'Roboto-Medium';
+}
+
+.pagination-btn {
+  background-color: #f2cb07;
+  color: #141414;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.pagination-dropdown {
+  background-color: transparent;
+  color: #f2cb07;
+  border-color: #f2cb07;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+}
+
+.pagination-txt {
+  color: #f2cb07;
+}
+
+/* FORM */
+
+#form-page {
+  background-color: #212121;
+  position: fixed;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-left: 40%;
+  padding-right: 40%;
+  text-align: left;
+}
+
+.form-txt {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: #f2f2f2;
+}
+
+.form-input {
+  border-radius: 10px;
+  border-color: #f2f2f252;
+  background-color: transparent;
+  border-width: 2px;
+  padding: 10px;
+  color: #f2f2f2;
+}
+
+.multiselect {
+  background-color: transparent;
+  color: #f2f2f2;
+  font-family: 'Roboto-Medium';
+}
+
+::placeholder {
+  color: #f2f2f252;
+  font-family: 'Roboto-Medium';
+}
+
+.error-txt {
+  color: #bc343e;
+  font-family: 'Roboto-Medium';
+  margin: 0%;
+  padding: 0%;
+  font-size: .8em;
+}
+
+.form-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#crear-btn {
+  color: #212121;
+  background-color: #f2b807;
+  border-color: transparent;
+  width: 200px;
+  font-size: 1em;
+}
+
+#atras-btn {
+  color: #f2f2f2;
+}
+
+#crear-btn:hover {
+  box-shadow: 5px 5px #f2b7077c;
+}
+
+.feedback-txt {
+  color: #f2f2f2;
+  text-align: center;
+  font-family: 'Roboto-Medium';
+  font-size: 1.2em;
+}
+
+/* DETAIL */
+
+#detail-page {
+  color: #f2f2f2;
+  text-align: center;
+  position: fixed;
+  background-image: url(./assets/pokemon-landscape.webp);
+}
+
+.detail-container {
+  border-radius: 100px;
+  width: fit-content;
+  margin: 20px;
+  padding: 80px;
+  background-image: linear-gradient(transparent, #141414);
+  position: absolute;
+  left: 38%;
+}
+
+.img-container {
+  width: 300px;
+}
+
+.detail-img {
+  width: 300px;
+}
+
+#close-btn {
+  background-color: #05D56D;
+  border-color: transparent;
+  margin-bottom: 10px;
+}
+
+#close-txt {
+  color: #141414;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+#close-btn:hover {
+  box-shadow: 5px 5px #139c5a93;
+}
+
+#editar-btn {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  margin: 0px;
+}
+
+#editar-txt {
+  color: #f2f2f2;
+}
